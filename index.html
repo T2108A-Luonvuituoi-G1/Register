@@ -8,65 +8,64 @@
 </head>
 
 <body>
-    <center>
-        <h1>Form Validation using HTML,CSS,JS</h1>
-    </center>
-    <hr>
-    <form method="get" action="http://fptaptechhanoi.herokuapp.com/music/register-api.md.html" name="reg_form"
-        onsubmit="return validate()">
-        <h2>Register Form</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td> <label>First Name:</label></td>
-                    <td> <input type="text" name="fname" placeholder="Enter Your First Name"></td>
-                </tr>
-                <tr>
-                    <td> <label>Last Name:</label></td>
-                    <td> <input type="text" name="lname" placeholder="Enter Your Last Name"></td>
-                </tr>
-                <tr>
-                    <td><label>Password:</label></td>
-                    <td><input type="password" name="password" placeholder="Enter Your Password"></td>
-                </tr>
-                <tr>
-                    <td> <label>Address:</label></td>
-                    <td> <input type="textarea" size="50" name="address" placeholder="Enter Your Address"></td>
-                </tr>
-                <tr>
-                    <td> <label>Gender:</label></td>
-                    <td> <input type="radio" name="gender" value="Male"> "Male"
-                        <input type="radio" name="gender" value="Female">"Female"
-                    </td>
-                </tr>
-                <tr>
-                    <td> <label>Email:</label></td>
-                    <td> <input type="text" name="email" placeholder="example@gmail.com"></td>
-                </tr>
-                <tr>
-                    <td> <label>Mobile:</label></td>
-                    <td> <input type="number" name="mobile" placeholder="Enter Your Mobile Phone"></td>
-                </tr>
-                <tr>
-                    <td><label>Mobilephone:</label></td>
-                    <td><input type="number" name="phone" placeholder="0123456789"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>BirthDay:</label>
-                    </td>
-                    <td> <input type="text" name="birthday" placeholder="MM-DD-YYYY"> </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" name="submit" value="submit">
-                        <input type="reset" name="reset" value="reset">
-                    </td>
+    <div id="main">
+        <header>
+            <!-- <h1>Form Validation using HTML,CSS,JS</h1> -->
+        </header>
+        
+        <div id="content">
+            <h2>Register Form</h2>
+            <div id="register-box">
+                <!-- FULLNAME  -->
+                <div id="fullname-input">
+                    <input type="text" name="fname" placeholder="First Name">
+                    <input type="text" name="lname" placeholder="Last Name:">
+                </div>
 
-                </tr>
-            </tbody>
-        </table>
-    </form>
+                <!-- EMAIL -->
+                <div class="input" id="email-input">
+                    <input type="text" name="email" placeholder="example@gmail.com">
+                </div>
+
+                <!-- Phone -->
+                <div class="input" id="phone-input">
+                    <input type="text" name="mobile" placeholder="Mobile Phone">
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="input" id="password-input">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+
+                <!-- AVATAR -->
+                <div class="input" id="avatar-input">
+                    <input type="text" name="avatar" placeholder="Avatar">
+                </div>
+
+                <!-- ADDRESS -->
+                <div class="input" id="address-input">
+                    <input type="textarea" name="address" placeholder="Address">
+                </div>
+
+                <!-- BIRTHDAY -->
+                <div class="input" id="birthday-input">
+                    <input type="date" name="birthday" placeholder="MM-DD-YYYY">
+                </div>
+
+                <!-- GENDER -->
+                <div class="input" id="gender-input">
+                    Male: <input type="radio" name="gender" value="Male">
+                    Female: <input type="radio" name="gender" value="Female">
+                </div>
+
+                <!-- SUMMIT RESET  -->
+                <div id="register-box-footer">
+                    <input type="submit" name="submit" value="submit">
+                    <input type="reset" name="reset" value="reset">
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./assets/js/register.js"></script>
 </body>
 
