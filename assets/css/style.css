@@ -7,30 +7,102 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-image: url("/Register/assets/images/4e675d5f34d7ff89a6c6.jpg");
+    background-size: 100% 120%;
+}
+
 #content {
     margin: 5% 38%;
-    width: 390px;
-    background-color: #ccc;
+    width: 389px;
+    height: 440px;
+    border-radius: 5px;
+    background-color: #FFB6C1;
 }
 
 #content h2 {
     text-align: center;
+    color: #fff;
 }
 
 #content #register-box div {
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 
 #register-box #fullname-input input {
     padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 182px;
+}
+
+#register-box .input {
+    border-radius: 5px;
 }
 
 #register-box .input input {
     width: 368px;
     padding: 5px;
+    border-radius: 5px;
+    border: none;
 }
 
-#register-box #gender-input input{
-    padding: 0 20px;
-    width: 20px;
+#gender {
+    width: 118px;
+    height: 30px;
+}
+
+select:required:invalid {
+    color: gray;
+}
+
+option {
+    color: black;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+#birthday {
+    width: 246px;
+    height: 30px;
+}
+
+#birthday-gender-input select,
+#birthday-gender-input input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+#birthday:required:invalid {
+    color: gray;
+}
+
+#register-box-footer button{
+    width: 182px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+#register-box-footer #signup {
+    color: #fff;
+    background-color: darkcyan;
+}
+
+#register-box-footer #signup:hover {
+    background-color: rgb(2, 107, 107);
+    cursor: pointer;
+}
+
+#register-box-footer #reset {
+    background-color: crimson;
+    color: #fff;
+}
+
+#register-box-footer #reset:hover {
+    background-color: rgb(165, 10, 41);
+    cursor: pointer;
 }
