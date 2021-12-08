@@ -18,44 +18,44 @@
             <div id="register-box">
                 <!-- FULLNAME  -->
                 <div id="fullname-input">
-                    <input type="text" name="fname" placeholder="First Name:">
-                    <input type="text" name="lname" placeholder="Last Name:">
+                    <input type="text" id="fname" name="fname" placeholder="First Name:" onchange="takeData()">
+                    <input type="text" id="lname" name="lname" placeholder="Last Name:" onchange="takeData()">
                 </div>
 
                 <!-- EMAIL -->
                 <div class="input" id="email-input">
-                    <input type="text" name="email" placeholder="example@gmail.com">
+                    <input type="text" id="email" name="email" placeholder="example@gmail.com" onchange="takeData()">
                 </div>
 
                 <!-- Phone -->
                 <div class="input" id="phone-input">
-                    <input type="text" name="mobile" placeholder="Mobile Phone">
+                    <input type="text" id="mobile" name="mobile" placeholder="Mobile Phone" onchange="takeData()">
                 </div>
 
                 <!-- PASSWORD -->
                 <div class="input" id="password-input">
-                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" id="password" name="password" placeholder="Password" onchange="takeData()">
                 </div>
 
                 <!-- AVATAR -->
                 <div class="input" id="avatar-input">
-                    <input type="text" name="avatar" placeholder="Avatar's url">
+                    <input type="text" id="ava" name="avatar" placeholder="Avatar's url" onchange="takeData()">
                 </div>
 
                 <!-- ADDRESS -->
                 <div class="input" id="address-input">
-                    <input type="textarea" name="address" placeholder="Address">
+                    <input type="textarea" id="address" name="address" placeholder="Address" onchange="takeData()">
                 </div>
 
                 <!-- BIRTHDAY GENDER -->
                 <div class="" id="birthday-gender-input">
-                    <select id="gender" name="gender" required>
+                    <select id="gender" name="gender" required onchange="takeData()">
                         <option value="" disabled selected>Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="Other">Other</option>
                     </select>
-                    <input required id="birthday" type="date" name="birthday" >
+                    <input required id="birthday" type="date" name="birthday" onchange="takeData()">
                 </div>
 
                 <!-- SUMMIT RESET  -->
