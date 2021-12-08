@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Group1</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -18,7 +18,7 @@
             <div id="register-box">
                 <!-- FULLNAME  -->
                 <div id="fullname-input">
-                    <input type="text" name="fname" placeholder="First Name">
+                    <input type="text" name="fname" placeholder="First Name:">
                     <input type="text" name="lname" placeholder="Last Name:">
                 </div>
 
@@ -39,7 +39,7 @@
 
                 <!-- AVATAR -->
                 <div class="input" id="avatar-input">
-                    <input type="text" name="avatar" placeholder="Avatar">
+                    <input type="text" name="avatar" placeholder="Avatar's url">
                 </div>
 
                 <!-- ADDRESS -->
@@ -47,21 +47,21 @@
                     <input type="textarea" name="address" placeholder="Address">
                 </div>
 
-                <!-- BIRTHDAY -->
-                <div class="input" id="birthday-input">
-                    <input type="date" name="birthday" placeholder="MM-DD-YYYY">
-                </div>
-
-                <!-- GENDER -->
-                <div class="input" id="gender-input">
-                    Male: <input type="radio" name="gender" value="Male">
-                    Female: <input type="radio" name="gender" value="Female">
+                <!-- BIRTHDAY GENDER -->
+                <div class="" id="birthday-gender-input">
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input required id="birthday" type="date" name="birthday" >
                 </div>
 
                 <!-- SUMMIT RESET  -->
                 <div id="register-box-footer">
-                    <input type="submit" name="submit" value="submit">
-                    <input type="reset" name="reset" value="reset">
+                    <button id="signup">Sign up</button>
+                    <button id="reset">Reset</button>
                 </div>
             </div>
         </div>
